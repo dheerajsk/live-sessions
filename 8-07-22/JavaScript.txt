@@ -1,0 +1,59 @@
+JavaScript.
+
+1. It is a programming language.
+2. It is used in front-end as well as in back-end.
+3. How does it work on front-end ?
+    3.1 It works with html.
+
+
+To do:
+    1. Create a html page. - Done.
+    2. Create JS file. - Done.
+    3. Link JS into html.
+    4. data types
+    5. operators.
+
+
+1. Have you created JS file ?
+2. Have you linked JS file ?
+3. have you saved JS and HTML files ?
+4. Did you refresh browser ?
+
+
+
+
+email, password.
+test@test.com, Password1.
+
+RunTimeEnvironment.
+
+Front End Development.
+    Html,
+    Css,
+    JS. - Angular, React, Vue, JQuery.
+
+On front-end, JavaScript uses Browser as RunTimeEnvironment.
+Google Chrome. => JavaScript Engine. - v8.
+
+Ryan Dahl. => used v8 engine., created anoter runtime env.
+            => to run JS on server side.
+            => NodeJS.
+
+Backend
+    Java
+    Python
+    C#
+    Perl
+    Go
+    JS
+
+Database
+    MqSql.
+    SqlServer.
+    mongoDB.
+    Oracle.
+
+
+variables, datatypes.
+keyword. - reserved words for internal use of language.
+var, const, require, 

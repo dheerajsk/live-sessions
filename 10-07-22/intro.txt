@@ -1,0 +1,45 @@
+
+
+What is a Programming Language ? - Done.
+    - to deliver an application.
+    - to develop softwares.
+    - to talk to computer.
+
+What is JavaScript ? - Done.
+    => A Programming Language.
+    => web application.
+
+C, C++, Java, Python, C#, Go, Perl, Swift, JS.
+
+Why do we need JavaScript ? - Done.
+    => 
+
+How a web(desktop browsers) application works? - Done.
+    1. Server is Back-end, - JS, Java, Python, C#
+    2. Client - Front-end. - 
+        HTML
+            - To build skeleton.
+        CSS 
+            - To Style the controls.
+        JavaScript-
+            Event Handling.
+            Sending Request.
+            Receiving Response.
+            Rendering response.
+
+Why JS in unique ? - Done.
+    1. browsers only understand js.
+    2. only langauge to used in fe and be both.
+    
+Why JS in unique ? - Done.
+    1. browsers only understand js.
+    2. only langauge to used in fe and be both.
+
+How to use JavaScript in Front-end ? - Done.
+
+Variables and DataTypes in JS.
+    DataTypes ? - string (alphanumeric special chars)
+                - Number (-99 to 99, 0.45)
+                - boolean (true, false)
+                - object {text, tweetedByUserID, datetime, location}, {name, email, pasword, dob, gender}
+                - undefined.

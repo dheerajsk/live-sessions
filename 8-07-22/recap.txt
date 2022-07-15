@@ -1,0 +1,25 @@
+
+1. Software
+2. Sofwatre Development
+3. What is front-end anc back-end.
+4. How front-end works ?
+5. Responsibilities of front-end developers.
+6. technologies involved in front-end development.
+7. HTML.
+8. CSS.
+9. JS.
+     - JS is a programming language.
+     - Which is used by browsers to handle events., call apis.
+
+10. Front-end framework/libraries.
+    library ? -> any prebuilt tool/code whhich you use in your application.
+            -> to save time, cost.
+            ex: Video Players, DatabaseDrivers, APIs. BrowserAPIs.
+                React, JQuery
+    Programming lanuguages.
+        used to give instructions to computers.
+    framework ?
+        -> advanced version of library.
+            => it includes required libraries.
+            => patterns.
+        => Angular, .Net, Spring, Express, Django.
