@@ -1,0 +1,11 @@
+Git & Github.
+=> Github is cloud space, to store code, share code.
+=> Git is used to sync localcode to cloud.
+=> They should be able to share code.
+=> To be able to check changes ? (who, when and what)
+=> To be able to save code in seure location.
+
+// 1. Download and Install Git.
+// 2. Register on Github.
+
+// 3. Git commands.
