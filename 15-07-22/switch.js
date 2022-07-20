@@ -1,6 +1,6 @@
 function printResult(grade) {
     switch (grade) {
-        case "A+" : {
+        case (grade>10) : {
             console.log("Distinction");
         }
         case "A" : {
