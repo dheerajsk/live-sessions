@@ -4,16 +4,14 @@ const http = require("http"); // module/library.
 // What is https. (secure version of http)
 // 2. Create Server.
 
-console.log("Hello world 1");
-
 http.createServer((req, res)=>{
     // We are ending reponse and returning it to client.
-    console.log("Hello world 2")
+    console.log("Hello world 2");
     res.end("Welcome to NodeJS Server");
 }).listen(4100);
 
-console.log("Hello world 3");
-
+// Client=> Server
+// CLient(req) => Server. Server => Sends Reponse.
 
 
 

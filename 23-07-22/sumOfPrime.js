@@ -36,7 +36,5 @@ find2PNums(4);
 find2PNums(200);
 find2PNums(11);
 
-
-
-
-
+arraySum();
+arraySum([]);

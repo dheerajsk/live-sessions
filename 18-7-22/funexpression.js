@@ -8,6 +8,7 @@
     // 4. Function is also a datatype in JS.
 
 // create a function. => Function Expression.
+// x67019 => memory address.
 const add = function(a,b){
     console.log(a+b);
 }
@@ -17,9 +18,10 @@ const sub = function(a,b){
 }
 
 
-calc(add); // 30
-calc(sub); // -10
-
-function calc(func){
-    func(10,20);
+function calculator(avnish){
+    avnish(10,20);
 }
+
+calculator(add); // 30
+calculator(sub); // -10
+
