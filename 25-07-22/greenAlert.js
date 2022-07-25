@@ -19,6 +19,7 @@ class Environmentalist{
     }
 
     showAlert(){
+        //pushLibrary.call("Plant trees please");
         console.warn("Please plant more trees");
     }
 
