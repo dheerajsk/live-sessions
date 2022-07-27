@@ -1,0 +1,18 @@
+
+
+Data Structures: Arrays and Objects.
+
+Questions:
+    1. How do you keep your cloths ?
+        => Wardrobe, Almirah, on bed, hanger, fridge, on floor.
+    2. Which one of these would be best place to keep cloths ?
+        => Wardrobe.
+    3. Why Wardrobe is best place to keep cloths and why not bed ?
+        1. To save from rats.
+        2. More organised.
+        3. pressed, and clean.
+        4. easy to access.
+        5. Look good.
+        6. Space savings.
+
+    1. How do we keep our data so that it is well organized, easy to access.
