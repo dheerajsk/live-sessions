@@ -1,23 +1,25 @@
 
 
 function findMaxProfit(array){
+
     let maxProfit = 0;
     let buyingPrice = 0;
     let sellingPrice = 0;
     let changeBuyingPrice = true;
+
     for(let i=0; i<array.length-1; i++){
         sellingPrice = array[i+1];
         if(changeBuyingPrice){
             buyingPrice = array[i];
         }
+
         if(sellingPrice<buyingPrice){
             // loss
             changeBuyingPrice=true;
-            continue;
         }else{
             // profit
-            let profit = sellingPrice-buyingPrice;
-            if(profit>maxProfit){
+            let profit = sellingPrice-buyingPrice; // 180-100 = 80.
+            if(profit>maxProfit){ // check if current profit is greater than previous profit
                 maxProfit=profit;
             }
             changeBuyingPrice = false;
@@ -26,4 +28,4 @@ function findMaxProfit(array){
     console.log(maxProfit);
 }
 
-findMaxProfit([100, 180, 260, 310, 695, 535, 40]);
+findMaxProfit([78, 21, 67, 68, 23, 190, 43, 21, 23]);

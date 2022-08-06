@@ -1,0 +1,17 @@
+
+
+[100, 180, 260, 310, 40, 535, 695, 20]
+
+Current Buy - Day 5
+Current Sell - Day 6 => 655.
+
+
+Buy on Day 1 -> 100
+Sell on Day 2 -> 180-100 => 80. P
+Sell on Day 3 -> 260-100 => 160. 
+Sell on Day 4 -> 310-100 => 210.
+Sell on Day 5 -> 40-100 => -60
+Buy on Day 5
+Sell on Day 6 > 535-40 => 495
+Sell on Day 7 -> 695-40 => 655
+Sell on Day 8 -> 80-40 => 40
