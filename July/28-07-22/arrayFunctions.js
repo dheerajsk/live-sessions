@@ -47,7 +47,7 @@ const isEven = (num)=>num%2==0;
 
 // const students = ["Zakvan", "Anashvar", "Rahul", "Asif", "Jagruthi"];
 // []
-//   console.log(students.filter(name=> name.length<=5));
+  console.log(students.filter(name=> name.length<=5));
 
 const students = [
     {"name":"Shivam", age: 30},
