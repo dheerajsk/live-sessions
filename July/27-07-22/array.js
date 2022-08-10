@@ -58,3 +58,6 @@ console.log(matrix[2][2]);
 console.log(matrix[3][2]);
 console.log(matrix[3][0]);
 console.log(matrix[0][3]);
+
+
+const matrix = [2, 3, 4, 5, 6] // single dimensional array

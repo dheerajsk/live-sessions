@@ -1,6 +1,6 @@
 
-// 1234
-// 108
+// 5
+// 5
 // 9
 
 function findSingleDigitSum(num){ // 10
