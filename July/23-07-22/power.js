@@ -14,6 +14,6 @@ function getPower(num, pow){
     console.log(result);
 }
 
-getPower(10, 2); // 100
-getPower(2, 5); 
+// getPower(10, 2); // 100
+// getPower(2, 5); 
 getPower(4, 3);
