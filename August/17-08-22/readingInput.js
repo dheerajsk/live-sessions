@@ -9,8 +9,12 @@ const readline = require("readline");
 
 // 2. Create an interface to read data from terminal
 // process is inbuilt javasript object.
-readline.createInterface({
+const rlInterface = readline.createInterface({
     input: process.stdin,
     output: process.stdout
 });
 
+rlInterface.question("Enter a number", (answer)=>{
+    console.log(answer);
+    rlInterface.close();
+});
