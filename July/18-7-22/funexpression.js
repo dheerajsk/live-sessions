@@ -12,6 +12,7 @@
 const add = function(a,b){
     console.log(a+b);
 }
+add();
 
 const sub = function(a,b){
     console.log(a-b);

@@ -13,13 +13,12 @@ const add = function(){
     var x = 10; // when add is called.
     console.log(x); // 10
     return function add2(){
+        // copies x variable into its own scope.
         var y = 20;
-        console.log(x+y);
+        console.log(x+y); // how x is accessible ??
     }
 }
 
-const result = add();
-// x will be destroyed.
-
-
-result();
+const result = add(); // x is destroyed.
+const result2 = result(); // when we call add 2 here, how x is accessible ?
+console.log(result2); 
