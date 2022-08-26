@@ -17,4 +17,4 @@ function findPairForSum(array, num){
     console.log("Pair not found");
     return;
 }
-findPairForSum([60,20,30,40,50, 0], 60);
+findPairForSum([60,20,30,40,50, 0], 50);
