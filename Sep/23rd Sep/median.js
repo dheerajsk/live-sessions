@@ -1,5 +1,20 @@
 
 
+function findMedian(array){
+    let mid = parseInt((array.length-1)/2);
+
+    // 1. if array length is even, (mid+mid+1)/2 is median.
+    if(array.length%2==0){
+        return (array[mid]+array[mid+1])/2;
+    }
+
+    // 2. if array length is odd, mid is median.
+    else{
+        return array[mid];
+    }
+}
+
+
 function mergeSort(array, left , mid, right){
     // 1. To Divide the array based on pointers.
     // create left and right array.
@@ -61,8 +76,9 @@ function preMergeSort(array, left, right){
 
 }
 
-
-const arr = [10,7,12,9,13,5,7,12,2,1,13];
-
-preMergeSort(arr, 0, arr.length-1);
-console.log(arr);
+const array = [11, 12, 25, 26, 38];
+const array2 = [2, 23, 17, 20, 45];
+const finalArray = [...array, ...array2];
+preMergeSort(finalArray, 0, finalArray.length-1);
+console.log(finalArray);
+console.log(findMedian(finalArray));
