@@ -47,17 +47,18 @@ function mergeSort(array, left , mid, right){
 // Just giving pointers to divide, and then merge later.
 function preMergeSort(array, left, right){
     // Stop Recursion
-    if(left<=right){
+    if(left>=right){
         return;
     }
+
     // Step 1: Find mid element
     let mid = parseInt((left+right)/2);
-    console.log(mid);
     // to create left array
     preMergeSort(array, left, mid);
     // to create right array/.
     preMergeSort(array, mid+1, right);
     mergeSort(array, left, mid, right);
+
 }
 
 
