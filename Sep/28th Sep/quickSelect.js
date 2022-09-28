@@ -2,24 +2,20 @@
 
 function quickSelect(arr, k){
 
-    partition(arr, 0, arr.length-1);
+    partition(arr, 0, arr.length-1, k);
 }
 
-function partition(array, low, high){
+function partition(array, low, high, k){
 
     let start = low;
     let end = high;
 
-    const mid = Math.floor((start+end)/2);
+    let mid = Math.floor((start+end)/2);
     const pivot = array[mid];
-    if(mid==k-1){
-        console.log("kth element is: "+array[mid]);
-        return;
-    }
     if(start>=end){
+        console.log("kth element is: "+arr[mid]);
         return;
     }
-
     while(start<end){
         // move start index
         while(array[start]<pivot){
@@ -34,13 +30,18 @@ function partition(array, low, high){
             start++;
             end--;
         }
+    }
+    mid = array.indexOf(pivot);
+    if(mid==k-1){
+        console.log("kth element is: "+arr[mid]);
+        return mid;
+    }
         // check if pivot is k
         if(mid>k-1){
-            partition(array, low, end);
+            partition(array, low, end, k);
         }else{
-            partition(array, start, high);
+            partition(array, start, high, k);
         }
-    }
 }
 
 function swap(array, start, end){
@@ -50,6 +51,5 @@ function swap(array, start, end){
 }
 
 
-const arr = [4, 3, 7, 11, 20, 19, 13];
-let k = 3;
-quickSelect(arr, k);
+const arr = [15, 13, 0, 17, 9, 12, 4];
+const result = quickSelect(arr, 3);
