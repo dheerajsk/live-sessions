@@ -1,0 +1,25 @@
+
+
+OOPS: - Object Oriented Programming.
+    Classes. - DOne
+    Objects. - Done.
+    Methods. - Done.
+    Constructor - Done.
+    this - Done.
+
+    Inheritance. - Done.
+    
+    Polymorphism.
+    Encapsulation.
+    Abstraction.
+
+
+Difference between BluePrint 
+
+and something created out of blueprint ?
+
+
+
+function do(){
+    
+}
