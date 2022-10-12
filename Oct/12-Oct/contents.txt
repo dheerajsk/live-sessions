@@ -1,0 +1,14 @@
+
+
+Asynchronous Programming. - Done.
+Synchronous Programming. - Done.
+Single Threading vs MultiThreading. - Done.
+
+How JS works ?
+How NodeJS works ?
+What is Event Loop ?
+Callback ?
+Promises ?
+async-await.
+
+Series of Books => You don't know JS.
