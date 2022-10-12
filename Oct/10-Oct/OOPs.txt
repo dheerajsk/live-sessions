@@ -1,17 +1,18 @@
 
 
-OOPS: - Object Oriented Programming.
+OOPS - Object Oriented Programming.
     Classes. - DOne
     Objects. - Done.
-    Methods. - Done.
+    Methods/Attributes. - Done.
     Constructor - Done.
     this - Done.
 
     Inheritance. - Done.
     
-    Polymorphism.
-    Encapsulation.
-    Abstraction.
+    Polymorphism. - Done.
+    Encapsulation. - Done.
+
+    Abstraction. - Not done.
 
 
 Difference between BluePrint 
@@ -20,6 +21,8 @@ and something created out of blueprint ?
 
 
 
-function do(){
-    
-}
+
+After OOPs:
+
+SOLID Principles.
+Design Patterns.

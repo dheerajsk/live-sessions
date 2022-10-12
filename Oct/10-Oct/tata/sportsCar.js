@@ -1,8 +1,7 @@
 
-
 // Parent/Super
 class Car{
-    engine=""
+    engine="";
     seats="";
     airBags = "";
     price="";
@@ -18,6 +17,10 @@ class Car{
     drive(){
         console.log("Driving...")
     }
+
+    build(){
+        console.log("Building car with common tools...");
+    }
 }
 
 
@@ -28,6 +31,7 @@ class SportsCar extends Car{
     nitro="";
 
     constructor(engine, seats, airBags, price, speedLimit, hp, nitro){
+        // call base class constructor.
         super(engine, seats, airBags, price);
         this.speedLimit = speedLimit;
         this.hp = hp;
@@ -37,6 +41,12 @@ class SportsCar extends Car{
     race(){
         console.log("Racing...");
     }
+
+    // overridden logic of base class build method.
+    build(){
+        console.log("Building with special tools for sports car...");
+    }
+
 }
 
 
@@ -53,14 +63,32 @@ class FamilyCar extends Car{
     driveSafe(){
         console.log("Driving safe....");
     }
+
+    build(){
+        super.build(); // build of car.
+        console.log("building better entertainment");
+    }
 }
 
-var scar = new SportsCar("Tata", 7, 4, 5000000, 250, 5000, true);
-scar.drive();// parent
-scar.race(); // its own
+
+class BudgetFamilyCar extends FamilyCar{
+
+    build(){
+        super.build(); // build of family car.
+        console.log("reducing number of seats");
+    }
+}
+
+// var scar = new SportsCar("Tata", 7, 4, 5000000, 250, 5000, true);
+// scar.drive();// parent
+// scar.race(); // its own
+// scar.build(); // parent
 
 
-var fcar = new FamilyCar("Tata", 5, 4, 500000, 4, true);
-fcar.drive(); // parent
-fcar.driveSafe(); // own 
+// var fcar = new FamilyCar("Tata", 5, 4, 500000, 4, true);
+// fcar.build();
+
+var bfcar = new BudgetFamilyCar();
+bfcar.build();
+
 // fcar.race(); // invalid

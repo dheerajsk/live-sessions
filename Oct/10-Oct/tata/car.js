@@ -1,21 +1,16 @@
 
-
-// Parent/Super
 class Car{
-    engine=""
+
+    engine="";
     seats="";
     airBags = "";
     price="";
 
-    constructor(engine, seats, airBags, price){
-        this.engine = engine;
-        this.seats = seats;
-        this.airBags = airBags;
-        this.price = price;
-    }
+    drive(){}
 
-    drive(){
-        console.log("Driving...")
-    }
+    build(){}
 }
+
+var car = new Car();
+car.
 
