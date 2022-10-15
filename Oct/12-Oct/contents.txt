@@ -4,11 +4,11 @@ Asynchronous Programming. - Done.
 Synchronous Programming. - Done.
 Single Threading vs MultiThreading. - Done.
 
-How JS works ?
-How NodeJS works ?
-What is Event Loop ?
-Callback ?
-Promises ?
+How JS works ? Done.
+How NodeJS works ? Done.
+What is Event Loop ? Done.
+Callback ? - Done.  - Not a good solution
+Promises - Solve problems with callback.
 async-await.
 
 Series of Books => You don't know JS.
