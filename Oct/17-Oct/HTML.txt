@@ -15,3 +15,37 @@ City.
 PinCode.
 T&C.
 button.
+
+Elements.
+    => Tags+Attributes+Inner content.
+
+
+Most commonly used tags in html.
+lists. - done.
+anchor. - done.
+paragraph - done.
+div - done.
+span - done.
+img - DOne.
+Table.
+
+
+Div vs Span.
+    => Both are containers to group elements together.
+
+
+2 Types of Elements.
+
+
+1. Block-Level Element.
+    1.1 It occuppies entire line.
+    1.2 It starts on new line.
+
+
+    eg: Div, p, lists.
+
+2. Inlline Element.
+    2.1 It occuppies space as much as it needs for the content.
+
+
+    eg: span, anchor.
