@@ -20,7 +20,7 @@ function placeOrder(){
             console.log(err);
         }
     
-    ).catch((err)=>{
+    ).catch(err=>{
         console.log("Error handling in catch function")
         console.log(err);
     });

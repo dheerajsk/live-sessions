@@ -1,0 +1,17 @@
+
+
+HTML
+    => 
+
+FirstName - Done
+LastName - Done.
+Email. - Done.
+Password. - Done.
+Dob.
+Mobile.
+Gender.
+AddressLine
+City.
+PinCode.
+T&C.
+button.

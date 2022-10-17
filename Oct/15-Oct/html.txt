@@ -1,0 +1,19 @@
+
+HTML.
+
+Questions.
+
+1. What are the components involved in Working of a web application ? 
+    1.1 Client 1.2 Server.
+    Front-end Back-end.
+
+2. What all technologies are invloved in building front-end application ?
+    HTML, CSS, JavaScript (Done).
+
+
+3. HTML.
+    Hyper Text Markup Language.
+    <Html></html>
+
+    Skeleton of application.
+
