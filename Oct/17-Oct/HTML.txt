@@ -49,3 +49,15 @@ Div vs Span.
 
 
     eg: span, anchor.
+
+
+table.
+thead
+tr
+th
+td
+tbody
+tfoot
+colgroup
+col
+colspan, span
