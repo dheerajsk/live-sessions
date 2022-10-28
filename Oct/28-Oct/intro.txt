@@ -1,0 +1,38 @@
+CSS.
+
+1. What is CSS ?
+    Cascaded Style Sheets ?
+      - Sheets which contains styles .
+      - Styling HTML pages.
+      - Cascaded ?
+2. Why we need CSS ?
+      - To improve presentation of page.
+      - To give it better look and feel.
+      - To improves UX - User Experience.
+3. WHat does CSS looks like ?
+    [Syntax] =>
+    propertyName:valueForProperty;
+    color:red;
+4. How to and where to write CSS ?
+    Multiple ways [Selectors] to write CSS.
+        => used to select elements to which css will apply.
+        => id, tag, class, global.
+
+    Multiple location(in your code) to write CSS.
+        1. Inline CSS. => Writing CSS inside elements.
+                    => style attribute.
+            You should avoid doing this. ?
+            It mixes 2 responsibilities in 1 module.
+            Against SRP (Single Responsibility Principle)
+        2. Internal CSS => CSS in same file as html but not inline.
+        3. External CSS => Separate CSS file.
+
+Priorities
+
+Inline.
+Internal.
+
+ID
+Class
+Tag
+*

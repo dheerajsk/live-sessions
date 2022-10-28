@@ -1,0 +1,30 @@
+
+label{
+    height: 34px;
+}
+
+/* Class Selector */
+/* dot is prefeix for class selector. */
+.bg-green{
+    background-color: green;
+}
+
+*{
+    font-size: x-large;
+}
+
+img{
+    /* Box Model -> Content, Border, Padding, Margin */
+    /* width style color */
+    border: 4px solid darkmagenta;
+
+    /* rounded corner */
+    border-radius: 16px;
+    /* Space between content and border of an element box model */
+    /* padding: 40px; */
+    /* top right bottom left */
+    padding: 40px 10px 20px 30px;
+    /* margin: 50px; */
+    margin: 50px 40px 30px 20px;
+}
+

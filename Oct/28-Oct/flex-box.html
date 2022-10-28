@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <style>
+        .mainDiv {
+            border: 2px solid red;
+            /* It creates a flexible container where children items can be moved around */
+            display: flex;
+            height: 500px;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        /* justify-content - primary axis*/
+        /* align-items - seconday axis. */
+
+        .childDiv {
+            border: 1px solid blue;
+            height: 100px;
+            width: 100px;
+        }
+
+        .firstDiv {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="mainDiv">
+        <div class="childDiv firstDiv"><span>Text 1 with some extra content which container can't have 1 with some extra
+                content which container can't have</span></div>
+        <div class="childDiv"></div>
+        <div class="childDiv"></div>
+        <div class="childDiv"></div>
+        <div class="childDiv"></div>
+    </div>
+
+</body>
+
+</html>
