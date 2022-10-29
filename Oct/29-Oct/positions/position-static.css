@@ -1,0 +1,8 @@
+
+
+div{
+    /* Default position */
+    position:static;
+    /* top has no effect on default position. */
+    top:100px;
+}

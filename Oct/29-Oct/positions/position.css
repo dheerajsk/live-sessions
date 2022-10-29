@@ -1,0 +1,62 @@
+
+
+div{
+    /* Not-static position will pull element out of default flow */
+    /* Relative to its own original position */
+    /* position: relative;
+    top: 100px;
+    left: 20px; */
+}
+
+.mainDiv {
+    border: 2px solid red;
+    /* It creates a flexible container where children items can be moved around */
+    display: flex;
+    margin: 50px;
+    height: 5000px;
+    justify-content: space-evenly;
+    align-items: center;
+    /* position: relative; */
+}
+
+/* justify-content - primary axis*/
+/* align-items - seconday axis. */
+
+.childDiv {
+    border: 1px solid blue;
+    height: 100px;
+    width: 100px;
+    background-color: red;
+}
+
+.firstDiv{
+    position: static;
+}
+
+.secondDiv{
+    /* relative to its own original positions */
+    position:relative;
+    top:10px;
+    left: 10px;
+}
+
+
+.thirdDiv{
+    /* Relative to viewport. */
+    position:fixed;
+    top:10px;
+    left:10px;
+}
+
+.forthDiv{
+    /* It is relative to its non-static ancestor or viewport. */
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.fifthDiv{
+    position: sticky;
+    top: 10px;
+    left: 10px;
+}

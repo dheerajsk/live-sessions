@@ -58,3 +58,18 @@ select{
     border: 1px solid lightgray;
     border-radius: 4px;
 }
+
+.input-check{
+    display:inline;
+    width: fit-content;
+    height: fit-content;
+    margin-top: 12px;
+}
+
+.label-check{
+    margin-top: 12px;
+    display:inline;
+}
+
+/* // inline, block */
+/* inline-block */

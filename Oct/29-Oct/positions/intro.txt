@@ -1,0 +1,12 @@
+
+Position.
+Default-> The way elements are added in code is the way they will appear on page.
+Default position => Static Position
+
+
+Position.
+    => top, bottom, right, left.
+
+2 types.
+1. Static -> Static/Default.
+2. Relative -> Relative, Absolute, Fixed.
