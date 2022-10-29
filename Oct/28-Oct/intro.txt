@@ -36,3 +36,11 @@ ID
 Class
 Tag
 *
+
+
+
+5. Flex Layout. - Done.
+6. Display.
+7. Position.
+8. Responsive Design.
+9. Animations.

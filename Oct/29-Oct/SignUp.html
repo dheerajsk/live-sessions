@@ -1,0 +1,85 @@
+<!-- Every html file starts with html and end with html tags. -->
+
+<html>
+
+<!-- to provide information about application, includes external resources(js, css). -->
+
+<head>
+    <link rel="stylesheet" href="SIgnup.css">
+</head>
+<!-- Includes your visible part of web page. -->
+
+<body>
+    <div class="container">
+        <h2 id="signUpHeader" style="color: red;">Please SignUp !!</h2>
+        <h4 id="header4" class="h4-header">It's quick and easy.</h4>
+
+        <!-- Create form and controls inside form. -->
+        <!-- A container contains form controls. -->
+        <form>
+            <!-- Self closing tags -->
+            <!-- Attribute => [name="value"] -->
+            <label for="fname">Enter First Name</label>
+            <input type="text" name="fname" value="Jon" placeholder="Your First Name" />
+            <label>Enter Last Name</label>
+            <input type="text" name="lname" value="Doe" placeholder="Your Last Name" />
+            <label for="email">Enter Email</label>
+            <input type="email" name="email" placeholder="Your Email" />
+
+            <label for="password">Enter Password</label>
+
+            <input type="password" name="password" placeholder="Your Password">
+
+            <label for="dob">Enter date of Birth</label>
+
+            <input type="date" name="dob">
+
+            <label for="mobile">Enter Mobile Phone</label>
+
+            <input type="text">
+            <input type="number" name="mobile">
+
+            <label for="gender">Please Select your Gender</label>
+
+            <input class="input-radio" type="radio" name="gender">
+            <label class="label-radio" for="">Male</label>
+            <input class="input-radio" type="radio" name="gender">
+            <label class="label-radio" for="">Female</label>
+            <input class="input-radio" type="radio" name="gender">
+            <label class="label-radio" for="">Other</label>
+
+            <!-- TextArea : Multiline text -->
+            <label for="address">Enter Your Address</label>
+
+            <textarea name="address" cols="30" placeholder="Your Address" rows="4"></textarea>
+
+            <label for="pincode">Enter Pincode</label>
+
+            <input type="text" name="pincode">
+
+            <label for="city">Select Your City</label>
+
+            <select name="city">
+                <option value="-1">Select City</option>
+                <option value="0">Mumbai</option>
+                <option value="1">Hyderabad</option>
+                <option value="2">Banglore</option>
+                <option value="3">New Delhi</option>
+                <option value="0">Pune</option>
+            </select>
+
+            <input type="checkbox" name="tc">
+            <label for="tc">Terms & Conditions</label>
+
+            <!-- Buttons -->
+
+            <!-- <input type="submit" value="Sign Up"> -->
+            <!-- <input type="button" name="save" value="Sign Up"> -->
+            <button class="bg-green" type="reset">Clear</button>
+        </form>
+
+
+    </div>
+</body>
+
+</html>
