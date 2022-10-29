@@ -10,3 +10,13 @@ Position.
 2 types.
 1. Static -> Static/Default.
 2. Relative -> Relative, Absolute, Fixed.
+
+
+Responsive Designs.
+
+1. Media Query.
+2. BreakPoints.
+
+An Obvious Solution.
+    1. To write an alternative css for mobile device. - media query.
+    2. A technique to apply this css when screen is mobile size. - breakpoints.

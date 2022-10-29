@@ -40,7 +40,8 @@ Tag
 
 
 5. Flex Layout. - Done.
-6. Display.
-7. Position.
+6. Display. - Done.
+7. Position. - Dine.
 8. Responsive Design.
+    Design which adapts to multple devices.
 9. Animations.

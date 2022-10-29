@@ -15,6 +15,7 @@ label{
 
 .container{
     margin: 36px;
+    display: flex;
 }
 
 input{
@@ -73,3 +74,38 @@ select{
 
 /* // inline, block */
 /* inline-block */
+.left{
+    /* Percent is relative to its parent. */
+    width: 50%;
+    height: 100%;
+}
+
+img{
+    width: 75%;
+}
+
+.right{
+    width: 50%;
+}
+
+
+/* ONly when screen size is less than 501px. */
+@media only screen and (max-width: 500px){
+    .container{
+        display: block;
+    }   
+    .left{
+        width: 100%;
+        height: 180px;
+        text-align: center;
+    }
+    .right{
+        width: 100%;
+    }
+    img{
+        width: 40%;
+    }
+}
+
+
+/* CSS at the end of file will have greater priority than what is on top */
