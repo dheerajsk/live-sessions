@@ -1,0 +1,57 @@
+
+.top_Header{
+    background-color: black;
+    height: 50px;
+    display: flex;
+}
+
+.icon_cover{
+    margin-top:-10px
+}
+
+.icon{
+    color: white;
+   
+}
+
+.companyName{
+    margin-left: 10px;
+    color: white;
+    font-size: small;
+}
+
+.tag{
+    font-size: smaller;
+    color: lightslategray;
+}
+
+.header_Left{
+    display: flex;
+    padding-left: 20px;
+    width: 20%;
+    align-items: center;
+}
+
+.header_Right{
+    padding: 8px;
+    width: 80%;
+    display: flex;
+    justify-content: end;
+}
+
+.btn-editor{
+    margin-right: 6px;
+    height: 34px;
+    padding: 8px;
+    background-color: grey;
+    border: 1px groove grey;
+    font-size: small;
+    color: white;
+    border-radius: 2px;
+}
+
+
+
+body{
+    margin: 0;
+}
