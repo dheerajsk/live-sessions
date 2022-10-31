@@ -1,0 +1,30 @@
+/* Css Animations. */
+
+
+.object{
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    background-color: blue;
+    border: 1px solid black;
+    animation-name: moveToRight;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+/* Keyframes */
+
+@keyframes moveToRight {
+    0% {top: 0; left:0}
+    10% {top: 0; left:100px}
+    20% {top:0; left:200px}
+    25% {top: 0; left:250px}
+    40% {background-color: burlywood; top:150px; left:250px}
+    50% {top:250px; left:250px; border-radius: 50%;}
+    60% {top:250px; left:200px}
+    70% {background-color: yellow; top:250px; left:100px}
+    80% {top:250px; left:0}
+    90% {background-color: red; top:100px; left:0}
+    100% {top:0; left:0}
+    
+}
