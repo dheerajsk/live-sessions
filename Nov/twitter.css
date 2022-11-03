@@ -1,6 +1,6 @@
 body{
     /* vh -> viewport height. */
-    height: 100vh;
+    height: 100%;
     margin: 0;
 }
 
@@ -98,7 +98,23 @@ a{
 
 .top-news{
     display: flex;
-    height: 90px;
+    height: 120px;
     color: white;
     padding: 16px;
+    margin-bottom: 36px;
+}
+
+/* Select all p descendants */
+.top-news p:nth-child(1), .top-news p:nth-child(3){
+    color: grey;
+    font-size: smaller;
+}
+
+.top-news img {
+    border-radius: 12px;
+}
+
+.top-news p:nth-child(2){
+    color: white;
+    font-size: large;
 }
