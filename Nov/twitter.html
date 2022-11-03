@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter | Home</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="twitter.css">
+
+</head>
+
+<body>
+
+    <div class="row">
+        <div class="col-3">
+            <div class="left-container">
+                <img src="data:image/png;base64,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"
+                    alt="">
+                <h3 class="left-menu">#&nbsp;&nbsp;Explore</h3>
+                <h3 class="left-menu"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-gear" viewBox="0 0 16 16">
+                        <path
+                            d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z" />
+                        <path
+                            d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z" />
+                    </svg>&nbsp;&nbsp;Settings</h3>
+            </div>
+        </div>
+        <div class="col-6 center">
+            <div class="top-bar">
+                <div style="display: flex;">
+                    <div class="search-wrapper">
+                        <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                        </svg>
+                        <input class="search-box" placeholder="Search Twitter" type="search">
+
+                    </div>
+                    <svg class="search-settings" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        fill="currentColor" class="bi bi-gear" viewBox="0 0 16 16">
+                        <path
+                            d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z" />
+                        <path
+                            d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z" />
+                    </svg>
+                </div>
+            </div>
+            <div class="banner">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">For You</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Trending</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sports</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Entertainment</a>
+                    </li>
+                </ul>
+
+                <!-- Banner image -->
+
+                <div class="banner-img">
+                    <p>India national news . LIVE</p>
+                    <h3>Assembly by-election: Voting begins for seven seats across six states</h3>
+                    <p>Trending with #byElection2022</p>
+                </div>
+
+                <!-- Contents -->
+
+                <div class="top-news">
+                    <div style="width: 80%">
+                        <p>World News . 2 hours ago</p>
+                        <p>Former prime minister Imran Khan injured.</p>
+                        <p>Trending with #Firing #Pakistan</p>
+                    </div>
+                    <div style="width: 20%">
+                        <img style="height: 100%; width:100%"
+                            src="https://pbs.twimg.com/semantic_core_img/1588145716974817282/nVQtPCoE?format=jpg&name=240x240"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-3">Right</div>
+    </div>
+</body>
+
+</html>
