@@ -1,0 +1,136 @@
+body
+{
+    height: 100vh;
+}
+
+.row
+{
+    background-color: black;
+    height: 100%;
+}
+
+.center-tab
+{
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+img{
+    height: 80px;
+    width: 80px;
+    margin: 20px 0px;
+}
+
+.left-container
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.settings
+{
+    color: white;
+}
+
+.search-settings
+{
+    color: white;
+    margin: 30px 0px 0px 30px;
+    height: 20px;
+}
+
+.left-menu
+{
+    margin-bottom: 20px;
+    color: white;
+    font-size: large;
+}
+
+.center-top
+{
+    display: flex;
+}
+
+.search-wrap
+{
+    background-color: rgb(32, 35, 39);
+    border-radius: 24px;
+    margin-top: 18px;
+    display: flex;
+    padding: 4px 20px;
+    padding-right: 0%;
+    width: 90%;
+}
+
+.search-icon
+{
+    color: white;
+    height: 36px;
+}
+
+.search-box
+{
+    width: 100%;
+    background-color: inherit;
+    height: 42px;
+    color: white;
+    padding: 5px 10px;
+    margin-left: 10px;
+    border-top-right-radius: 24px;
+    border-bottom-right-radius: 24px;
+    border: none;
+    outline: none;
+}
+
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    background-color: inherit;
+    border: none;
+    outline: none;
+}
+
+
+a{
+    color: gray !important;
+}
+
+.nav-tabs{
+    border-bottom: none;
+}
+
+.banner
+{
+    background-image: url('https://images3.alphacoders.com/118/thumb-1920-1185634.jpg');
+    height: 350px;
+    background-size: cover;
+    display: flex;
+    color: white;
+    flex-direction: column;
+    justify-content: end;
+    padding: 10px 30px;
+}
+
+.news-tab
+{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 30px;
+}
+
+.news-info
+{
+    color: white;
+}
+
+.news-info p:nth-child(1){
+   color: gray;
+}
+
+.news-img
+{
+
+}
