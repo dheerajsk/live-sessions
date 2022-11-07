@@ -7,3 +7,8 @@
 form{
     margin-bottom: 64px;
 }
+
+li{
+    list-style-type: none;
+    margin: 10px;
+}

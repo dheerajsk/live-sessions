@@ -23,6 +23,8 @@ Learnings:
 How to handle form submit event ? - Done.
 How to access element from DOM ? - Done.
 How to read value of an element ? - Done.
+How to add new elements to dom ? - Done.
+How to style elements in dom ? - Done.
 
 
 What is DOM. => Document Object Model.
@@ -34,3 +36,7 @@ LINK.       SCRIPT.                    DIV.
                             input.
 
 [HTML, HEAD, BODY, FORM, INPUT.]
+
+
+
+Button. => Event generated.
