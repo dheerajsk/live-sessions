@@ -1,0 +1,36 @@
+App Steps:
+
+1. Create form. - Done.
+
+2. Read text box data on click of button. - Done.
+
+3. add todo text and button (edit, delete) to todo list.
+    3.1 Create todo list. - Done.
+    3.2 Create LI.
+    3.3 Add text to todo list item.
+    3.4. Add edit button to todo list item.
+    3.5 Add delete button to todo list item.
+    3.6 Add listitem to the list.
+
+4. On click of edit.
+    4.1 convert text into a textbox.
+    4.2 on click of edit again, update the text in list.
+5. On click of delete remove todo item from the list.
+
+
+Learnings:
+
+How to handle form submit event ? - Done.
+How to access element from DOM ? - Done.
+How to read value of an element ? - Done.
+
+
+What is DOM. => Document Object Model.
+Tree Data Structure to structure html page.
+                    HTML.
+        HEAD.                       BODY.
+LINK.       SCRIPT.                    DIV.
+                                    FORM.   FORM.
+                            input.
+
+[HTML, HEAD, BODY, FORM, INPUT.]

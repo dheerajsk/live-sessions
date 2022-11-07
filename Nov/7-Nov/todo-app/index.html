@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <form action="" onsubmit="handleToDoFormSubmit(); return false;">
+            <h6>ADD ITEM</h6>
+            <hr>
+            <input value="" id="txtTodo" class="form-control mb-3" type="text">
+            <button type="submit" class="btn btn-info float-end">ADD</button>
+        </form>
+
+        <h6>TO DO</h6>
+        <hr>
+        <ul id="todoList">
+<!--          inner html    -->
+        </ul>
+    </div>
+
+</body>
+
+</html>
