@@ -40,3 +40,12 @@ LINK.       SCRIPT.                    DIV.
 
 
 Button. => Event generated.
+
+
+1. What is DOM ?
+2. How to get an element from dom ?
+3. How to read any values from element ?
+4. How to update values of element in dom ?
+5. How to capture events ?
+6. How to get element where event was raised ?
+7. How to style an element ?
