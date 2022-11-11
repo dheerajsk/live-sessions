@@ -74,18 +74,23 @@ function handleEditClick(event){
 
     // event object contains information related to the event.
     // event.target => points to the element which has raised event.
-    console.log("Button clcked");
+    
+    if(document.getElementById("txtbUpdate")){
+        updateToDo(event);
+        return;
+    }
+
     const button = document.getElementById(event.target.id);
     const labelID=event.target.id.replace("editBtn","todo");
     const label = document.getElementById(labelID);
-    
-    
+
     button.innerText="Save";
     // label.style.display="none";
 
     // Create a text box and add it to li.
     const txtBox = document.createElement("input");
     txtBox.type="text";
+    txtBox.id="txtbUpdate";
     txtBox.value=label.innerText;
     txtBox.classList.add("form-control");
 
@@ -98,5 +103,21 @@ function handleEditClick(event){
     
 }
 
+function updateToDo(event){
 
-"editBtn1", "labeltodo1"
+    // 1. To read data of text box
+    const textb = document.getElementById("txtbUpdate");
+    // 2. Create a label.
+    const label = document.createElement("label");
+    // 3. Add data to label.
+    label.innerText=textb.value;
+    label.id="todo"+event.target.id.replace("editBtn","");
+    label.style.width="80%";
+    // 4. Add label to li.
+    const liID=event.target.id.replace("editBtn","listItem");
+    const li = document.getElementById(liID);
+    li.prepend(label);
+    // 5. Remove textbox from li.
+    textb.style.display="none";
+
+}
