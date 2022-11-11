@@ -2,44 +2,79 @@
 let todos=[];
 
 function handleToDoFormSubmit(){
-    console.log("Form submitted");
+    // console.log("Form submitted");
 
     // 1. Get The Text box.
     const txtTodo = document.getElementById("txtTodo");
-    console.log(txtTodo);
+    // console.log(txtTodo);
 
     // 2. Get data from text box.
     const todoTextValue = txtTodo.value;
     txtTodo.value="";
-    console.log(todoTextValue);
+    // console.log(todoTextValue);
     createTodoListItem(todoTextValue);
 }
 
 function createTodoListItem(text){
     todos.push(text);
 
-    const li="<li id=listItem"+todos.length+"><label id=todo"+todos.length+" style='width:80%'>"+text+"</label><button id=editBtn"+todos.length+" onclick='handleEditClick(event)' class='btn btn-primary'>Edit</button>&nbsp;&nbsp;&nbsp;<button class='btn btn-danger'>Delete</button></li>"
+    // const li="<li id=listItem"+todos.length+"><label id=todo"+todos.length+" style='width:80%'>"+text+"</label><button id=editBtn"+todos.length+" onclick='handleEditClick(event)' class='btn btn-primary'>Edit</button>&nbsp;&nbsp;&nbsp;<button class='btn btn-danger'>Delete</button></li>"
+   
+    // 1. create li.
+    // 2. add a label to li.
+    // 3. add edit button
+    // 4. add delete button.
+    // 5. add li to ul.
+
+    //1. Create li.
+    const li = document.createElement("li");
+    li.id="listItem"+todos.length;
+    
+    // 2. create label
+    const label = document.createElement("label");
+    label.id="todo"+todos.length;
+    label.style.width="80%";
+    label.innerText=text;
+
+    // create edit button/
+    const ebtn = document.createElement("button");
+    ebtn.id="editBtn"+todos.length;
+    ebtn.classList.add("btn");
+    ebtn.classList.add("btn-primary");
+    ebtn.innerText="Edit";
+    ebtn.addEventListener("click",handleEditClick)
+
+    // create delete button/
+    const dbtn = document.createElement("button");
+    dbtn.id="dBtn"+todos.length;
+    dbtn.classList.add("btn");
+    dbtn.classList.add("btn-danger");
+    dbtn.innerText="Delete";
+
+    li.appendChild(label);
+    li.appendChild(ebtn);
+    li.appendChild(dbtn);
+
     // Find the ul where we need to add created li.
     const ul = document.getElementById("todoList");
-
     // Append li to innerhtml of ul.
-    ul.innerHTML= ul.innerHTML+li;
+    ul.appendChild(li);
 
 }
 
 function handleEditClick(event){
    
     // 1. Get ID of button.
-    // 2. using that get id of label.
+    // 2. using id of button get id of label.
     // 3. get label.
     // 4. create text box.
     // 5. assign value of textbox to label text.
     // 6. get li.
     // 7. add textbox to li.
 
-
     // event object contains information related to the event.
     // event.target => points to the element which has raised event.
+    console.log("Button clcked");
     const button = document.getElementById(event.target.id);
     const labelID=event.target.id.replace("editBtn","todo");
     const label = document.getElementById(labelID);
@@ -49,11 +84,19 @@ function handleEditClick(event){
     // label.style.display="none";
 
     // Create a text box and add it to li.
-    const txtBox = "<input value='"+label.innerText+"' class='form-control' type='text' id='txtBoxToDoUpdate' />";
+    const txtBox = document.createElement("input");
+    txtBox.type="text";
+    txtBox.value=label.innerText;
+    txtBox.classList.add("form-control");
+
+    console.log("textbox created");
     label.style.display="none";
     const liID=event.target.id.replace("editBtn","listItem");
     const li = document.getElementById(liID);
-    li.innerHTML=txtBox+li.innerHTML;
-
+    console.log(li);
+    li.prepend(txtBox);
     
 }
+
+
+"editBtn1", "labeltodo1"
