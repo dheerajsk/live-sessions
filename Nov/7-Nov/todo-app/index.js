@@ -50,9 +50,13 @@ function createTodoListItem(text){
     dbtn.classList.add("btn");
     dbtn.classList.add("btn-danger");
     dbtn.innerText="Delete";
+    dbtn.addEventListener("click",deleteToDo)
 
     li.appendChild(label);
     li.appendChild(ebtn);
+    let span = document.createElement("span");
+    span.innerHTML="&nbsp;&nbsp;"
+    li.appendChild(span);
     li.appendChild(dbtn);
 
     // Find the ul where we need to add created li.
@@ -75,12 +79,16 @@ function handleEditClick(event){
     // event object contains information related to the event.
     // event.target => points to the element which has raised event.
     
-    if(document.getElementById("txtbUpdate")){
+    const button = document.getElementById(event.target.id);
+    const tb = document.getElementById("txtbUpdate");
+    console.log(tb);
+    if(tb){
+        console.log("On edit mode");
         updateToDo(event);
+        button.innerText="Edit";
         return;
     }
 
-    const button = document.getElementById(event.target.id);
     const labelID=event.target.id.replace("editBtn","todo");
     const label = document.getElementById(labelID);
 
@@ -116,8 +124,16 @@ function updateToDo(event){
     // 4. Add label to li.
     const liID=event.target.id.replace("editBtn","listItem");
     const li = document.getElementById(liID);
-    li.prepend(label);
-    // 5. Remove textbox from li.
-    textb.style.display="none";
+    li.replaceChild(label, textb);
+    
 
+}
+
+function deleteToDo(event){
+    // 1. Get Delete button and its id.
+    const button = document.getElementById(event.target.id);
+    // 2. Get parent li.
+    const li = button.parentElement;
+    // 3. remove li.
+    document.getElementById("todoList").removeChild(li);
 }
