@@ -62,3 +62,6 @@ validatePaymentSystem();
     // Problems.
         // 1. No proper error handling technique.
         // 2. Loss of control over code.
+// Callback
+// Promise.
+// async-await. (then)
