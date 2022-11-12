@@ -13,17 +13,38 @@ function validatePaymentSystem(){
     const promise= upiVerfication.verifyPromise("xyz@okicici");
     promise.then(
         // will be called(by Js internally) when promise is resolved.
-        ()=>{
+        (msg)=>{
+            console.log(msg);
             deductMoney();
-        },
-        // will be called when promise is rejected.
-        ()=>{}
+            const promise = new Promise((res, rej)=>{
+                rej();
+            })
+
+            promise.then(
+                ()=>{
+                    const promise = new Promise((res, rej)=>{
+                        rej();
+                    });
+                    promise.then(
+                        ()=>{},
+                    )
+                },
+                );
+
+        }
+    ).catch(
+        (err)=>{
+            console.log("This is inside catch");
+            console.log(err);
+        }
     );
 }
 
 
 function deductMoney(amount, err){
+    throw new Error("Error after promise is resolved");
     if(err){
+        
         console.log("Error message received");
         console.log(err);
     }else{

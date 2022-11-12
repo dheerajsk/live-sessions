@@ -19,8 +19,13 @@ module.exports.verifyPromise = ()=>{
     const promise = new Promise((resolve, reject)=>{
         //encapsulate async code.
         setTimeout(()=>{
-            console.log("Verify upi");
-            resolve();
+            try{
+                throw new Error("Error in promise");
+                console.log("Verify upi");
+                resolve("Verified");
+            }catch(ex){
+                reject("Couldn't verify");
+            }
         }, 1000);
     });
     return promise; 
